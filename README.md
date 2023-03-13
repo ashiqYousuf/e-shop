@@ -30,3 +30,7 @@ Live Demo can be viewed at [e-shop](https://e-shop-jl5z.onrender.com)
 # Install react modules
 * 1 - cd frontend
 * 2 - npm install
+
+# Media Files in Production
+When it comes to handling media files in production, you have less options than you do for static files since you can't use WhiteNoise for serving media files. Thus, you'll typically want to use Nginx along with django-storages to store media files outside the local file system where your application is running in production.
+**Prefer to store your media files on [Amazon S3](https://aws.amazon.com/s3/)? Check out [Storing Django Static and Media Files on Amazon S3](https://testdriven.io/blog/storing-django-static-and-media-files-on-amazon-s3/).**
